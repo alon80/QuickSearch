@@ -155,7 +155,6 @@ public class PlayerService extends Service
                     e.printStackTrace();
                 }
                 bmap = Utils.loadMaskedBitmap(is, mAlbumCoverLayout.getHeight(), containerNewWidth);
-                int off = 0;
                 params = (RelativeLayout.LayoutParams) mAlbumCoverLayout.getLayoutParams();
                 params.width = (bmap.getWidth() * mAlbumCoverLayout.getHeight()) / bmap.getHeight();
                 params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT,0);
